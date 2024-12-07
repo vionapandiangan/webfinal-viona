@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Viona Pandiangan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300 text-white font-sans">
+
+  <!-- Header -->
+  <header class="p-4 bg-pink-600 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Viona Pandiangan</h1>
+      <!-- Hamburger Menu -->
+      <div class="md:hidden">
+        <button id="hamburger" aria-label="Open Menu" class="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul id="nav-links" class="hidden md:flex gap-4">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+        <li><a href="gallery.html" class="hover:text-gray-300">Gallery</a></li>
+        <li><a href="calculator.html" class="hover:text-gray-300">Calculator</a></li>
+        <li><a href="registration.html" class="hover:text-gray-300">Registration</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-pink-700 text-white p-4">
+      <ul class="space-y-4">
+        <li><a href="index.html" class="block">Home</a></li>
+        <li><a href="about.html" class="block">About</a></li>
+        <li><a href="gallery.html" class="block">Gallery</a></li>
+        <li><a href="calculator.html" class="block">Calculator</a></li>
+        <li><a href="registration.html" class="block">Registration</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="min-h-screen flex flex-col justify-center items-center text-center">
+    <div class="max-w-2xl">
+      <h2 class="text-4xl font-extrabold mb-4">Hello, I'm Viona Pandiangan</h2>
+      <p class="text-lg mb-6">A passionate Frontend Web Developer creating stunning, user-friendly websites.</p>
+      <a href="about.html" class="bg-white text-pink-600 px-6 py-3 rounded shadow-lg hover:bg-gray-100 transition">
+        Learn More About Me
+      </a>
+    </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-700 text-center py-6">
+        <div class="container mx-auto">
+        <!-- Footer Title -->
+        <h3 class="text-2xl font-semibold mb-4 text-white">Connect with Me</h3>
+    
+        <!-- Social Media Links -->
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="https://www.instagram.com/p/DBnQgELRDwohMDp9y3mmoCcP-H_rPMTQdAdhvY0/?igsh=MWU2bHQ5aWQ1a2F0cw==" target="_blank" class="text-white hover:text-gray-300 transition">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://github.com/vionapandiangan" target="_blank" class="text-white hover:text-gray-300 transition">
+            <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/share/p/12BmByxwcbZ/" target="_blank" class="text-white hover:text-gray-300 transition">
+            <i class="fab fa-facebook fa-2x f"></i>
+            </a>
+        </div>
+  
+        <!-- Footer Text -->
+        <p>&copy; 2024 Viona Pandiangan. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('block');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

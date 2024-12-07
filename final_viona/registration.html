@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Viona Pandiangan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300 text-white">
+  <!-- Header -->
+  <header class="p-4 bg-pink-600 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Viona Pandiangan</h1>
+      <div class="md:hidden">
+        <button id="hamburger" aria-label="Open Menu" class="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul id="nav-links" class="hidden md:flex gap-4">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+        <li><a href="gallery.html" class="hover:text-gray-300">Gallery</a></li>
+        <li><a href="calculator.html" class="hover:text-gray-300">Calculator</a></li>
+        <li><a href="registration.html" class="hover:text-gray-300">Registration</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-pink-700 text-white p-4">
+      <ul class="space-y-4">
+        <li><a href="index.html" class="block">Home</a></li>
+        <li><a href="about.html" class="block">About</a></li>
+        <li><a href="gallery.html" class="block">Gallery</a></li>
+        <li><a href="calculator.html" class="block">Calculator</a></li>
+        <li><a href="registration.html" class="block">Registration</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-12">
+    <h2 class="text-4xl font-extrabold text-center mb-8 text-sky-100">Registration</h2>
+    <form id="registration-form" class="max-w-md mx-auto bg-white text-pink-700 rounded-lg shadow-lg p-6" onsubmit="return validateForm()">
+      <div class="mb-4">
+        <label for="name" class="block mb-1 font-bold text-sky-700">Name</label>
+        <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" maxlength="40" placeholder="Enter your name">
+        <p id="name-warning" class="text-red-500 text-sm hidden">Name is required (max 40 characters).</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="phone" class="block mb-1 font-bold text-sky-700">Phone Number</label>
+        <input type="text" id="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" maxlength="15" placeholder="Enter your phone number">
+        <p id="phone-warning" class="text-red-500 text-sm hidden">Please enter a valid phone number (max 15 digits).</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block mb-1 font-bold text-sky-700">Email</label>
+        <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Enter your email">
+        <p id="email-warning" class="text-red-500 text-sm hidden">Please enter a valid email address.</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="block mb-1 font-bold text-sky-700">Password</label>
+        <input type="password" id="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Create a password">
+        <p id="password-warning" class="text-red-500 text-sm hidden">Password must be 8-16 characters, with at least one uppercase, one lowercase, and one number (no symbols).</p>
+      </div>
+
+      <div class="mb-6">
+        <label for="confirm-password" class="block mb-1 font-bold text-sky-700">Confirm Password</label>
+        <input type="password" id="confirm-password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" placeholder="Confirm your password">
+        <p id="confirm-password-warning" class="text-red-500 text-sm hidden">Passwords do not match.</p>
+      </div>
+
+      <button type="submit" class="bg-pink-500 text-white w-full p-3 rounded-lg transition-all duration-300 hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-300">Register</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-pink-700 text-center py-6">
+    <div class="container mx-auto">
+    <!-- Footer Title -->
+    <h3 class="text-2xl font-semibold mb-4 text-white">Connect with Me</h3>
+
+    <!-- Social Media Links -->
+    <div class="flex justify-center gap-6 mb-6">
+        <a href="https://www.instagram.com/p/DBnQgELRDwohMDp9y3mmoCcP-H_rPMTQdAdhvY0/?igsh=MWU2bHQ5aWQ1a2F0cw==" target="_blank" class="text-white hover:text-gray-300 transition">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://github.com/vionapandiangan" target="_blank" class="text-white hover:text-gray-300 transition">
+        <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/share/p/12BmByxwcbZ/" target="_blank" class="text-white hover:text-gray-300 transition">
+        <i class="fab fa-facebook fa-2x f"></i>
+        </a>
+    </div>
+
+    <!-- Footer Text -->
+    <p>&copy; 2024 Viona Pandiangan. All rights reserved.</p>
+    </div>
+</footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('block');
+    });
+  </script>
+
+  <!-- Registration Form Validation JavaScript -->
+  <script src="js/registration.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

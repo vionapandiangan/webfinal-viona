@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Mobile Menu */
+  #mobile-menu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #mobile-menu ul li {
+    padding: 10px 0;
+  }
+  
+  /* Calculator Styles */
+  #calculator-display {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #e63946;
+  }
+  
+  /* Custom Button Styles for Calculator */
+  button {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #d62828;
+    transform: scale(1.1);
+  }
+  
+  /* Form Styles */
+  input, button {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #f1faee;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
